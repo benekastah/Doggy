@@ -10,6 +10,17 @@
 		DAF6B0791DF9DA46008B0D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6B0781DF9DA46008B0D5F /* AppDelegate.swift */; };
 		DAF6B07B1DF9DA46008B0D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B07A1DF9DA46008B0D5F /* Assets.xcassets */; };
 		DAF6B07E1DF9DA46008B0D5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B07C1DF9DA46008B0D5F /* MainMenu.xib */; };
+		DAF6B0A61DF9F642008B0D5F /* position-window.applescript in Sources */ = {isa = PBXBuildFile; fileRef = DAF6B0A51DF9F642008B0D5F /* position-window.applescript */; };
+		DAF6B0C81DFB54E4008B0D5F /* Doggy-16.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0BE1DFB54E4008B0D5F /* Doggy-16.png */; };
+		DAF6B0CA1DFB54E4008B0D5F /* Doggy-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C01DFB54E4008B0D5F /* Doggy-32.png */; };
+		DAF6B0CB1DFB54E4008B0D5F /* Doggy-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C11DFB54E4008B0D5F /* Doggy-32@2x.png */; };
+		DAF6B0CC1DFB54E4008B0D5F /* Doggy-128.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C21DFB54E4008B0D5F /* Doggy-128.png */; };
+		DAF6B0CD1DFB54E4008B0D5F /* Doggy-128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C31DFB54E4008B0D5F /* Doggy-128@2x.png */; };
+		DAF6B0CE1DFB54E4008B0D5F /* Doggy-256.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C41DFB54E4008B0D5F /* Doggy-256.png */; };
+		DAF6B0CF1DFB54E4008B0D5F /* Doggy-256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C51DFB54E4008B0D5F /* Doggy-256@2x.png */; };
+		DAF6B0D01DFB54E4008B0D5F /* Doggy-512.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C61DFB54E4008B0D5F /* Doggy-512.png */; };
+		DAF6B0D11DFB54E4008B0D5F /* Doggy-512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0C71DFB54E4008B0D5F /* Doggy-512@2x.png */; };
+		DAF6B0D31DFB5531008B0D5F /* Doggy-16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6B0D21DFB5531008B0D5F /* Doggy-16@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +29,18 @@
 		DAF6B07A1DF9DA46008B0D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF6B07D1DF9DA46008B0D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DAF6B07F1DF9DA46008B0D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF6B0A51DF9F642008B0D5F /* position-window.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; name = "position-window.applescript"; path = "../position-window.applescript"; sourceTree = "<group>"; };
+		DAF6B0A81DFA0746008B0D5F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		DAF6B0BE1DFB54E4008B0D5F /* Doggy-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-16.png"; sourceTree = "<group>"; };
+		DAF6B0C01DFB54E4008B0D5F /* Doggy-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-32.png"; sourceTree = "<group>"; };
+		DAF6B0C11DFB54E4008B0D5F /* Doggy-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-32@2x.png"; sourceTree = "<group>"; };
+		DAF6B0C21DFB54E4008B0D5F /* Doggy-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-128.png"; sourceTree = "<group>"; };
+		DAF6B0C31DFB54E4008B0D5F /* Doggy-128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-128@2x.png"; sourceTree = "<group>"; };
+		DAF6B0C41DFB54E4008B0D5F /* Doggy-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-256.png"; sourceTree = "<group>"; };
+		DAF6B0C51DFB54E4008B0D5F /* Doggy-256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-256@2x.png"; sourceTree = "<group>"; };
+		DAF6B0C61DFB54E4008B0D5F /* Doggy-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-512.png"; sourceTree = "<group>"; };
+		DAF6B0C71DFB54E4008B0D5F /* Doggy-512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-512@2x.png"; sourceTree = "<group>"; };
+		DAF6B0D21DFB5531008B0D5F /* Doggy-16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doggy-16@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,7 @@
 			children = (
 				DAF6B0771DF9DA46008B0D5F /* Doggy */,
 				DAF6B0761DF9DA46008B0D5F /* Products */,
+				DAF6B0A71DFA0746008B0D5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +78,43 @@
 				DAF6B07A1DF9DA46008B0D5F /* Assets.xcassets */,
 				DAF6B07C1DF9DA46008B0D5F /* MainMenu.xib */,
 				DAF6B07F1DF9DA46008B0D5F /* Info.plist */,
+				DAF6B0D41DFF4E4E008B0D5F /* Resources */,
+				DAF6B0A01DF9EA39008B0D5F /* Assets */,
 			);
 			path = Doggy;
+			sourceTree = "<group>";
+		};
+		DAF6B0A01DF9EA39008B0D5F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6B0BE1DFB54E4008B0D5F /* Doggy-16.png */,
+				DAF6B0D21DFB5531008B0D5F /* Doggy-16@2x.png */,
+				DAF6B0C01DFB54E4008B0D5F /* Doggy-32.png */,
+				DAF6B0C11DFB54E4008B0D5F /* Doggy-32@2x.png */,
+				DAF6B0C21DFB54E4008B0D5F /* Doggy-128.png */,
+				DAF6B0C31DFB54E4008B0D5F /* Doggy-128@2x.png */,
+				DAF6B0C41DFB54E4008B0D5F /* Doggy-256.png */,
+				DAF6B0C51DFB54E4008B0D5F /* Doggy-256@2x.png */,
+				DAF6B0C61DFB54E4008B0D5F /* Doggy-512.png */,
+				DAF6B0C71DFB54E4008B0D5F /* Doggy-512@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DAF6B0A71DFA0746008B0D5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6B0A81DFA0746008B0D5F /* EventKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAF6B0D41DFF4E4E008B0D5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6B0A51DF9F642008B0D5F /* position-window.applescript */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,8 +176,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF6B0CA1DFB54E4008B0D5F /* Doggy-32.png in Resources */,
+				DAF6B0CF1DFB54E4008B0D5F /* Doggy-256@2x.png in Resources */,
+				DAF6B0D31DFB5531008B0D5F /* Doggy-16@2x.png in Resources */,
 				DAF6B07B1DF9DA46008B0D5F /* Assets.xcassets in Resources */,
+				DAF6B0CB1DFB54E4008B0D5F /* Doggy-32@2x.png in Resources */,
+				DAF6B0CC1DFB54E4008B0D5F /* Doggy-128.png in Resources */,
 				DAF6B07E1DF9DA46008B0D5F /* MainMenu.xib in Resources */,
+				DAF6B0D01DFB54E4008B0D5F /* Doggy-512.png in Resources */,
+				DAF6B0D11DFB54E4008B0D5F /* Doggy-512@2x.png in Resources */,
+				DAF6B0CE1DFB54E4008B0D5F /* Doggy-256.png in Resources */,
+				DAF6B0C81DFB54E4008B0D5F /* Doggy-16.png in Resources */,
+				DAF6B0CD1DFB54E4008B0D5F /* Doggy-128@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF6B0A61DF9F642008B0D5F /* position-window.applescript in Sources */,
 				DAF6B0791DF9DA46008B0D5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
