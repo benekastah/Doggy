@@ -57,53 +57,56 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             NSEvent.addGlobalMonitorForEvents(matching: NSEventMask.keyUp.union(NSEventMask.flagsChanged),
                                               handler: handleGlobalEvents)
         } else {
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {(_: Timer) in self.setUpGlobalEvents()})
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: {(_: Timer) in self.setUpGlobalEvents()})
         }
     }
     
     func handleGlobalEvents(event: NSEvent) {
-        let command = event.modifierFlags.contains(NSEventModifierFlags.command)
-        let control = event.modifierFlags.contains(NSEventModifierFlags.control)
-        if command && control {
-            shiftPressed = shiftPressed || event.modifierFlags.contains(NSEventModifierFlags.shift)
-            upPressed = upPressed || event.keyCode == 126
-            rightPressed = rightPressed || event.keyCode == 124
-            downPressed = downPressed || event.keyCode == 125
-            leftPressed = leftPressed || event.keyCode == 123
-            timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: delayedHandleGlobalEvents)
+        let commandPressed = event.modifierFlags.contains(NSEventModifierFlags.command)
+        let controlPressed = event.modifierFlags.contains(NSEventModifierFlags.control)
+        shiftPressed = shiftPressed || event.modifierFlags.contains(NSEventModifierFlags.shift)
+        upPressed = upPressed || event.keyCode == 126
+        rightPressed = rightPressed || event.keyCode == 124
+        downPressed = downPressed || event.keyCode == 125
+        leftPressed = leftPressed || event.keyCode == 123
+        
+        timer?.invalidate()
+        
+        if commandPressed && controlPressed {
+            if shiftPressed {
+                if leftPressed {
+                    pullLeftBig(sender: self)
+                } else if rightPressed {
+                    pullRightBig(sender: self)
+                } else if upPressed {
+                    pullMiddleTop(sender: self)
+                } else if downPressed {
+                    pullMiddleBottom(sender: self)
+                }
+            } else if leftPressed && downPressed {
+                pullLeftBottom(sender: self)
+            } else if leftPressed && upPressed {
+                pullLeftTop(sender: self)
+            } else if leftPressed {
+                pullLeft(sender: self)
+            } else if rightPressed && downPressed {
+                pullRightBottom(sender: self)
+            } else if rightPressed && upPressed {
+                pullRightTop(sender: self)
+            } else if rightPressed {
+                pullRight(sender: self)
+            } else if upPressed {
+                fullScreen(sender: self)
+            } else if downPressed {
+                pullMiddle(sender: self)
+            }
+            cleanKeyboardVars();
+        } else {
+            timer = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: false, block: {(_: Timer) in self.cleanKeyboardVars()});
         }
     }
     
-    func delayedHandleGlobalEvents(t: Timer) {
-        if shiftPressed {
-            if leftPressed {
-                pullLeftBig(sender: self)
-            } else if rightPressed {
-                pullRightBig(sender: self)
-            } else if upPressed {
-                pullMiddleTop(sender: self)
-            } else if downPressed {
-                pullMiddleBottom(sender: self)
-            }
-        } else if leftPressed && downPressed {
-            pullLeftBottom(sender: self)
-        } else if leftPressed && upPressed {
-            pullLeftTop(sender: self)
-        } else if leftPressed {
-            pullLeft(sender: self)
-        } else if rightPressed && downPressed {
-            pullRightBottom(sender: self)
-        } else if rightPressed && upPressed {
-            pullRightTop(sender: self)
-        } else if rightPressed {
-            pullRight(sender: self)
-        } else if upPressed {
-            fullScreen(sender: self)
-        } else if downPressed {
-            pullMiddle(sender: self)
-        }
-    
+    func cleanKeyboardVars() {
         shiftPressed = false
         leftPressed = false
         rightPressed = false
